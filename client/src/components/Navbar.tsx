@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { HiX, HiOutlineMenu } from "react-icons/hi";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
