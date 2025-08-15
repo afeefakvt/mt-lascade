@@ -7,7 +7,7 @@
 git clone https://github.com/afeefakvt/mt-lascade
 ```
 ```bash
-cd mt lascade
+cd mt-lascade
 ```
 
 
