@@ -6,7 +6,6 @@ export default function ServicesSection() {
     <section className="py-12 md:py-16">
       <div className="max-w-[1220px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        {/* Left Side */}
         <div className="w-full max-w-[457px]">
           <h2 className="text-[#034833] font-bold text-[28px] md:text-[46px] mb-4">
             Our Services
@@ -15,7 +14,6 @@ export default function ServicesSection() {
             "It is really hard to find a slot on VFS global. With VisaBot I have found the slot in 2 days. Thank you so much for such a good job!!!"
           </p>
 
-          {/* Testimonial */}
           <div className="mt-6">
             <FaQuoteLeft className="text-[#219653] text-[20px] md:text-[28px] mb-3" />
             <p className="font-semibold text-[#034833] text-[18px] md:text-[18px]">Best on the market</p>
@@ -30,10 +28,8 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        {/* Right Side - Pricing Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:w-[705px] md:h-[518px]">
           
-          {/* Notifications */}
           <div className="border bg-[#F6FFFC] border-[#034833] rounded-xl p-5 flex flex-col justify-between w-[358px] md:w-[340.5px] h-[457px] md:h-[518px]">
             <div>
               <h3 className="text-[#034833] font-bold text-[24px] md:text-[32px] mb-3">Notifications</h3>
@@ -65,7 +61,6 @@ export default function ServicesSection() {
             </button>
           </div>
 
-          {/* Auto Booking */}
           <div className="border border-[#034833] bg-[#FFFFFF] rounded-xl p-5 flex flex-col justify-between w-[358px] md:w-[340.5px] h-[457px] md:h-[518px]">
             <div>
               <h3 className="text-[#FF9000] font-bold text-[24px] md:text-[32px] mb-3">Auto Booking</h3>

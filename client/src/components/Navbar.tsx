@@ -1,6 +1,6 @@
-import  { useState } from "react";
-import {  HiArrowUpRight } from "react-icons/hi2";
-import { HiX, HiOutlineMenu, } from "react-icons/hi";
+import { useState } from "react";
+import { HiArrowUpRight } from "react-icons/hi2";
+import { HiX, HiOutlineMenu } from "react-icons/hi";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
@@ -23,7 +23,6 @@ export default function Navbar() {
           h-[90px]
         "
       >
-        {/* Logo pill */}
         <div className="flex items-center bg-white rounded-[60px] px-[27px] py-[15px] gap-[12px]">
           <img
             src={logo}
@@ -32,30 +31,44 @@ export default function Navbar() {
           />
         </div>
 
-        {/* Desktop nav links */}
-        <ul
-          className="
-            hidden md:flex items-center justify-between
-            w-[652px] h-[70px] rounded-[60px]
-            bg-white px-[32px] py-[10px]
-          "
-        >
-          {navLinks.map((link) => (
-            <li
-              key={link}
-              className="font-sen font-medium text-[14px] leading-[26px] uppercase text-[#0F3D2E] cursor-pointer hover:opacity-80"
-            >
-              {link}
-            </li>
-          ))}
-        </ul>
+<ul
+  className="
+    hidden md:flex items-center justify-center flex-wrap
+    bg-white rounded-[60px]
+    h-auto lg:h-[70px]
+    max-w-full xl:max-w-[700px]
 
-        {/* CTA Button */}
+    /* Default (≥768px) */
+    gap-6 px-[20px] py-[8px]
+
+    /* Medium desktops / laptops (≥1024px) */
+    lg:gap-8 lg:px-[28px] lg:py-[9px]
+
+    /* Large desktop (≥1470px) */
+    xl:gap-10 xl:px-[36px] xl:py-[10px]
+  "
+>
+  {navLinks.map((link) => (
+    <li
+      key={link}
+      className="
+        font-sen font-medium 
+        text-[12px] md:text-[13px] lg:text-[14px]
+        leading-[22px] lg:leading-[26px]
+        uppercase text-[#0F3D2E]
+        cursor-pointer hover:opacity-80
+      "
+    >
+      {link}
+    </li>
+  ))}
+</ul>
+
         <button
           className="
             hidden md:flex items-center justify-between
-            bg-[#F66F4D] w-[242px] h-[70px] rounded-[150px]
-            py-[9px] pr-[9px] pl-[30px] gap-[12px]
+            bg-[#F66F4D] max-w-[242px] h-[70px] rounded-[150px]
+            px-[30px] gap-[12px]
             text-white font-sen font-medium text-[14px] uppercase
             hover:bg-[#e65b3c] transition
           "
@@ -65,8 +78,6 @@ export default function Navbar() {
             <HiArrowUpRight className="w-[16px] h-[16px]" />
           </span>
         </button>
-
-        {/* Hamburger Icon (mobile) */}
         <button
           className="md:hidden text-[#0F3D2E]"
           onClick={() => setIsOpen(!isOpen)}
@@ -79,7 +90,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg absolute w-full left-0 z-50">
           <ul className="flex flex-col items-center py-6 gap-4">

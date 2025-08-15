@@ -1,10 +1,5 @@
 import { IoMdArrowForward } from "react-icons/io";
-// import phoneImage from "/src/assets/phone.png"; 
-// import smileyIcon from "/src/assets/Smile.png"; 
-// import bellIcon from "/src/assets/Notification.png";
-// import bagIcon from "/src/assets/Group.png";
-// import settingsIcon from "/src/assets/Tick.png";
-// import bgImage from '/src/assets/Background.png';
+
 
 import mockupImage from '/src/assets/Mockup.png';
 export default function StatsSection() {
@@ -16,7 +11,6 @@ export default function StatsSection() {
           grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center
         "
       >
-        {/* Left - Image */}
         <div className="flex justify-center">
           <img
             src={mockupImage}
@@ -28,7 +22,6 @@ export default function StatsSection() {
           />
         </div>
 
-        {/* Right - Text & Stats */}
         <div className="text-white text-center lg:text-left">
           <h2
             className="
@@ -57,7 +50,6 @@ export default function StatsSection() {
             TRY VISABOT <IoMdArrowForward />
           </button>
 
-          {/* Stats Grid */}
           <div
             className="
               mt-10 grid grid-cols-2 gap-4 max-w-[420px] mx-auto lg:mx-0
@@ -76,6 +68,7 @@ export default function StatsSection() {
                 <p className="text-[#034833] font-bold text-[28px] sm:text-[32px] md:text-[38px]">
                   {item.value}
                 </p>
+
                 <span className="text-[#5B5F62] text-[14px] sm:text-[16px]">
                   {item.label}
                 </span>
